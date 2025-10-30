@@ -50,6 +50,15 @@ class StartFragment : Fragment(), View.OnClickListener {
         return view
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        PreferenceManager.getDefaultSharedPreferences(activity)
+            .edit().putString(MainActivity.PREFERENCE_URL, "https://painel.populargps.com.br").apply()
+        activity.fragmentManager
+            .beginTransaction().replace(android.R.id.content, MainFragment())
+            .commitAllowingStateLoss()
+    }
+
     @SuppressLint("StaticFieldLeak")
     override fun onClick(view: View) {
         startButton.isEnabled = false

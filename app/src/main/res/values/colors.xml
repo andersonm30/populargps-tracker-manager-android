@@ -4,5 +4,6 @@
     <color name="primary">#1a237e</color>
     <color name="primary_dark">#000051</color>
     <color name="accent">#2e7d32</color>
+    <color name="notification_background">#FFFFFF</color>
 
 </resources>

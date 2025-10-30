@@ -8,8 +8,8 @@ plugins {
 android {
     compileSdk 35
     defaultConfig {
-        applicationId 'org.traccar.manager'
-        minSdkVersion 21
+        applicationId 'com.populargps.traccar.manager'
+        minSdkVersion 28
         targetSdkVersion 35
         versionCode 42
         versionName '4.6'
